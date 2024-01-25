@@ -1,0 +1,37 @@
+How many resources do we have in IAM ?
+IAM (Identity and Access Management) in AWS provides resources like users, groups, roles, policies, and identity providers.
+Deployment model in IAM ?
+IAM is a service within AWS, and its deployment model is intrinsic to AWS's overall cloud deployment.
+Identities in IAM ?
+Identities in IAM include users, groups, and roles, which are entities associated with AWS accounts and control access to AWS resources.
+What is an IAM User ?
+An IAM user is an entity that represents a person or service and is used to interact with AWS resources. 
+Users have credentials (username and password or access keys).
+What is the IAM Group ?
+An IAM group is a collection of IAM users. 
+Groups are used to simplify the management of permissions by allowing you to assign policies to a group of users.
+What is the IAM Policy ?
+An IAM policy is a document defining permissions. It specifies what actions are allowed or denied on what resources. 
+Policies can be attached to users, groups, or roles.
+What is the IAM Role ?
+An IAM role is similar to a user but is assumed by anyone who needs it for a specific set of tasks, providing temporary access. 
+Roles are often used in cross-account access scenarios.
+Where do we attach Identity Based Policy ?
+Identity-based policies are attached to IAM users, groups, or roles.
+Where do we attach Resource Based Policy ?
+Resource-based policies are attached directly to resources, specifying who has access to the resource.
+Can we be able to create Policy via json code ?
+Yes, IAM policies can be created using JSON code to define the permissions and resources.
+If one user has created it by default, which permission has been assigned to that user ?
+When a user is created, they have no permissions by default. 
+Permissions must be explicitly granted through policies.
+What is dominator policy ?
+The Policy that overlap otherpolicy is called dominator policy.
+For example If a user has S3 full access and it ids added to a group whichn has S3 only read access than the S3 full access is dominator policy. 
+What is ARN ? What are the fields in ARN ?
+ARN is a unique identifier for AWS resources. 
+Fields include the partition, service, region, account ID, resource type, and resource-specific qualifiers.
+How many types of ARN Partition ?
+AWS ARNs can be in aws, aws-cn (China), aws-us-gov (AWS GovCloud), or custom partitions.
+What are Tags ?
+Tags in AWS IAM are key-value pairs that can be attached to IAM users, groups, roles, and policies for better organization and resource management.
