@@ -1,0 +1,41 @@
+1.What is VPC ?
+VPC (Virtual Private Cloud):
+VPC is a logically isolated section of the AWS Cloud where you can launch AWS resources. It enables customization of the network configuration, IP address range, and subnets.
+2.What are the Subnets when working with VPC ?
+Subnets are segments of IP address ranges within a VPC. They are used to organize resources, and instances in different subnets can communicate with each other.
+3.What is NAT Device ?
+A NAT (Network Address Translation) device allows instances in a private subnet to initiate outbound traffic while preventing incoming traffic initiated from the internet.
+4.What is the difference between stateful & stateless filtering ?
+Stateful filtering tracks the state of active connections, allowing return traffic automatically. 
+Stateless filtering evaluates each packet individually, without considering the state of the connection.
+5.What are the advantages of using default VPC ?
+Default VPC simplifies deployment by providing predefined settings. 
+Instances launched in the default VPC have internet connectivity by default, easing initial configuration.
+6.What is the internet gateway in VPC ?
+An internet gateway allows communication between instances in a VPC and the internet. It serves as a gateway for outbound and inbound traffic.
+8.What is Network ACL in VPC ?
+Network Access Control List (ACL) acts as a stateless firewall for controlling traffic in and out of subnets within a VPC.
+9.What is the Security Group in VPC ?
+A Security Group acts as a virtual firewall for instances. It controls inbound and outbound traffic, providing a stateful filtering mechanism.
+10.What is an Elastic IP Address in VPC, and why do we need to use, realtime example ?
+An Elastic IP is a static IPv4 address for dynamic cloud computing. 
+It's used to mask the failure of an instance and ensures a consistent IP address for an EC2 instance. 
+For example, it's beneficial for hosting a website with a consistent IP.
+11.Can we attach one Production Elastic IP to the new Prod server ?
+Yes, we can attach an Elastic IP from one instance to another, allowing a smooth transition between servers while maintaining a fixed IP address.
+12.How does ELB Affect a VPC ?
+Elastic Load Balancer (ELB) distributes incoming traffic across multiple instances. It improves the availability and fault tolerance of applications within a VPC.
+13.What are the limitations of VPC’s, Gateway and subnets ?
+Limitations include quotas on VPCs, subnets, and internet gateways. There are also restrictions on modifying certain settings after VPC creation.
+14.What is a Public IP Address and why do we use it ?
+A Public IP Address is used to identify a device on the internet. It enables communication between devices across the global internet.
+15.Explain Bastion Host Concept ?
+A Bastion Host is a specially configured instance that allows secure access to private instances within a VPC. It acts as a gateway for SSH or RDP access.
+16.When do we need to create a new customised VPC ?
+Create a new customized VPC when specific network configurations are needed, such as distinct IP address ranges, different routing policies, or specific connectivity requirements.
+17.What is Peering ? Why do we need to peer at two VPC’s ?
+Peering connects two VPCs, allowing them to communicate as if they were on the same network. 
+It's needed for resource sharing, application migration, or interconnecting environments.
+18.What is VPN, Where do we use VPN Tunnel ?
+A VPN establishes a secure connection between two networks over the internet. VPN tunnels are used to ensure encrypted and private communication.
+VPN tunnels are used to create secure connections between on-premises data centers and AWS VPCs, ensuring private and encrypted communication over the internet.
