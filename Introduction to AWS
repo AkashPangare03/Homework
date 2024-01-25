@@ -1,1 +1,21 @@
+What is cloud computing ?
+Cloud computing is a technology that allows users to access and use computing resources 
+(like servers, storage, and software) over the internet, instead of relying on local servers or devices.
+Deployment Model in Cloud ?
+Cloud deployment models include Public Cloud (accessible by the public), Private Cloud (restricted access for a single organization), 
+Hybrid Cloud (combination of public and private), and Community Cloud (shared by specific communities).
+Service Model in Cloud ?
+Cloud services are categorized into Infrastructure as a Service (IaaS), Platform as a Service (PaaS), and Software as a Service (SaaS), 
+representing different levels of abstraction and management responsibilities.
+Architecture of Cloud Computing ?
+Cloud computing architecture consists of front-end and back-end components. 
+The front-end includes user devices and interfaces, while the back-end comprises servers, storage, and a network managed by cloud providers.
+AWS Global Infrastructure Count ?
+AWS has multiple data centers across regions globally, with over 80 availability zones.
+Why do we use region ?
+Regions in cloud computing, like AWS, provide geographical diversity and redundancy. 
+Using multiple regions enhances fault tolerance, reduces latency, and complies with data sovereignty regulations.
+What is service ? & What are resources ?
+In cloud computing, a service refers to a set of functionalities provided over the internet, like computing power or storage. 
+Resources are the underlying components that make up these services, such as virtual machines, databases, or networking components.
 
