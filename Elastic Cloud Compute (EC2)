@@ -1,0 +1,99 @@
+1.What is EC2, Why do we need EC2 service in cloud computing ?
+EC2 is a scalable virtual computing environment in AWS, allowing users to rent virtual servers, known as instances, to run applications and services.
+EC2 is crucial for cloud computing as it provides scalable and resizable compute capacity. 
+It enables users to quickly deploy virtual servers, matching computing resources with application needs.
+2.Features of Amazon EC2 ?
+Features include on-demand instances, various instance types, auto-scaling, Elastic Load Balancing, security groups, and the ability to customize and scale compute resources.
+3.What is Hypervisor ? and its types ?
+A hypervisor is a virtualization platform. 
+Types include Type 1 (bare-metal, like Xen, VMware ESXi) and Type 2 (hosted, like VMware Workstation, VirtualBox).
+4.Where we use hypervisor
+Hypervisors are used in virtualization environments, managing multiple virtual machines on a physical host.
+5.Steps to create an EC2 instance.
+Steps include navigating to the EC2 console, launching an instance, choosing an Amazon Machine Image (AMI), 
+configuring instance details, adding storage, and configuring security groups.
+6.EC2 Instance state ?
+The state of an EC2 instance can be pending, running, stopping, stopped, shutting down, or terminated.
+7.How many types of EC2 Instance-State codes ?
+EC2 instance-state codes include 0 (pending), 16 (running), 32 (shutting down), 48 (terminated), and others.
+8.What is the meaning of server hibernating mode ?
+Hibernating mode in a server refers to a state where the server's current state, including memory and processor state, is saved to disk, allowing a quick restart.
+9.What is KMS ?
+KMS (Key Management Service):
+KMS is a service for managing encryption keys, providing centralized control over cryptographic keys used to protect data.
+10.AWS Amazon EC2 Instance types ?
+Instance types include General Purpose, Compute Optimized, Memory Optimized, Storage Optimized, and Accelerated Computing.
+11.How many types of status checks happen in aws ?
+Status checks in AWS include instance status checks and system status checks, ensuring instances are operating correctly.
+12.When we see the global view option in ec2 service ?
+The global view option in EC2 is available in the EC2 Dashboard, allowing users to view resources across all regions.
+13.When we logged into the cloud account by default why do we always jump into the north virginia region, why it’s most popular ?
+AWS defaults to the North Virginia (us-east-1) region upon login, often because it was the first region and remains widely used, offering a comprehensive set of services.
+14.What are EBS Volumes and its types ?
+EBS (Elastic Block Store) provides persistent block-level storage for EC2 instances. Types include General Purpose (SSD), Provisioned IOPS (SSD), and Magnetic.
+15.Purpose of Using EBS volumes ?
+EBS volumes provide scalable and durable storage for EC2 instances, offering high performance and reliability.
+16.How many types of purchasing options do we have in aws ec2 ?
+Purchasing options include On-Demand Instances, Reserved Instances, and Spot Instances.
+17.Difference between AWS AMI Image & AWS Template ?
+An AWS AMI (Amazon Machine Image) is a pre-configured virtual machine image. 
+An AWS Template is a broader term and can refer to CloudFormation templates used to create and provision AWS resources.
+18.What is NIC & it’s types ?
+NIC is a hardware component that allows computers to connect to a network. Types include physical and virtual NICs.
+19.What is elastic IP ? & WHY were we used ?
+An Elastic IP is a static IP address assigned to an AWS account, allowing users to mask the failure of an instance by remapping the address to another instance.
+20.What is the snapshot of why we use it ?
+A snapshot in AWS is a point-in-time copy of an EBS volume. It is used for data backup, recovery, and migrating data between regions.
+21.How can we save money in snapshot costing, if an automated snapshot has been created ?
+Money can be saved by managing snapshot costs through efficient use of Amazon Data Lifecycle Manager, which automates the creation and retention of snapshots.
+22.What is the lifecycle manager in snapshot ?
+The Lifecycle Manager automates snapshot creation, retention, and deletion, streamlining the backup process and reducing costs.
+23.How does the Amazon lifecycle manager work ?
+Amazon Lifecycle Manager automates the creation and deletion of EBS volume snapshots based on user-defined schedules and retention policies.
+24.Difference between Security Group & NACL ?
+Security Groups are stateful, operate at the instance level, and control inbound/outbound traffic. 
+NACL (Network Access Control List) is stateless, operates at the subnet level, and controls traffic at the protocol and port level.
+25.What are NACL & Its types ?
+NACL is a security layer for controlling inbound and outbound traffic at the subnet level in AWS VPC. Types include custom and default NACLs.
+26.How many IP Addresses can we attach to the instances ?
+Instances in AWS can be associated with private and Elastic IP addresses. The number of private IPs varies by instance type.
+27.How many types of volume states do we have ?
+EBS volume states include creating, available, in-use, deleting, deleted, and error.
+28.What is a key pair, and its types ?
+A key pair in AWS is used for secure SSH access to instances. Types include EC2 key pairs and Elastic Beanstalk key pairs.
+29.What is load balancer and its types ?
+A load balancer distributes incoming traffic across multiple instances. 
+Types include Classic Load Balancer, Application Load Balancer (ALB), and Network Load Balancer (NLB).
+30.How does the load balancer work in the backend? Can you explain it ?
+In the backend, a load balancer distributes incoming requests to healthy instances based on configured rules, ensuring even traffic distribution and high availability.
+31.Features of Load Balancers ?
+Load balancer features include automatic scaling, SSL termination, cross-zone load balancing, and health checks for efficient application delivery.
+32.What is ASG ? & Its types ?
+ASG automatically adjusts the number of EC2 instances in a group based on demand. Types include simple scaling and step scaling.
+33.What is a Health Check ?
+A health check in ASG determines the health of instances, allowing ASG to replace instances that fail the health check.
+34.What is the threshold ?
+Threshold in ASG is the limit at which the ASG triggers a scaling action, either scaling out or scaling in.
+35.What is the group of LB ?
+A group of LB refers to the set of load balancers configured to distribute traffic across multiple instances for high availability and fault tolerance.
+35.Why do we prefer ALB over ALB ?
+ALB (Application Load Balancer) is preferred over ELB (Classic Load Balancer) due to its advanced features like content-based routing, SSL termination, and WebSocket support.
+36.Difference between Web server & Application server ?
+A web server handles HTTP requests and responses, serving static content, while an application server runs application logic, handling dynamic content and business logic.
+37.What is the target group ?
+A target group is part of an ALB configuration, defining a set of targets (EC2 instances) for routing traffic based on rules and conditions.
+38.What is the desired capacity in ASG ?
+Desired Capacity in ASG represents the ideal number of instances that should be running at any given time, ensuring the group's specified capacity.
+39.How many types of the Scaling option ?
+Scaling options include manual scaling, scheduled scaling, and dynamic scaling based on policies and metrics.
+40.Scaling plans ?
+Scaling plans are predefined strategies for automatically adjusting the capacity of an ASG based on application and infrastructure needs.
+41.Types Auto scaling?
+ypes of auto scaling include horizontal scaling (adjusting the number of instances) and vertical scaling (changing the instance size).
+42.Difference between vertical scaling and horizontal scaling ?
+Vertical scaling involves increasing the capacity of an existing instance, while horizontal scaling adds more instances to distribute the load.
+43.Difference between AMI & Snapshot ?
+An AMI is a machine image containing an operating system and application, while a snapshot is a point-in-time copy of an EBS volume, often used for backups.
+44.What is difference between EBS/EFS/S3?
+EBS (Elastic Block Store) is block-level storage for EC2 instances, EFS (Elastic File System) is scalable file storage, and S3 (Simple Storage Service) is object storage for scalable data storage. 
+Each serves different purposes in AWS.
