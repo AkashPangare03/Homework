@@ -1,25 +1,38 @@
-What is SNS ?
+1.What is SNS ?
 SNS (Simple Notification Service):
-SNS is a fully managed AWS service for sending messages or notifications to a distributed set of recipients via various communication protocols.
-Why do we use SNS ?
-SNS is used for broadcasting messages, alerts, or notifications to a large number of subscribers, facilitating event-driven architectures and decoupling components.
-What is an Amazon SNS function, and how we can configure it.
-Amazon SNS functions by allowing publishers to send messages to topics, which are then delivered to subscribers. 
-Configuration involves creating topics, subscribing endpoints, and managing access policies.
-Difference between Amazon SNS & Amazon SQS.
-SNS is for push notifications, broadcasting to multiple subscribers, 
-while SQS (Simple Queue Service) is a message queue for decoupling components in a distributed system.
-What are the different delivery formats and transports in AWS SNS ?
-SNS supports multiple delivery formats like JSON, Raw, and transport protocols including HTTP, HTTPS, Email, SMS, and more.
-What is the difference between SNS FIFO & Standard while creating the SNS topic.
-SNS FIFO (First-In-First-Out) topics ensure messages are processed in the order they are sent, while Standard topics do not guarantee strict message order.
-On which services are configured with the AWS SNS ?
-AWS SNS is configured with services like Lambda, SQS, HTTP/HTTPS endpoints, Email, SMS, and mobile push services.
-What is 10DLC in AWS ?
-10DLC (10-Digit Long Code) is a method of sending high-throughput A2P (Application-to-Person) messages using local phone numbers, often used in SNS for SMS messaging.
-What are FIFO topics on SNS ?
-FIFO topics in SNS ensure exactly-once message delivery and maintain the order of messages, suitable for scenarios requiring strict sequencing.
-What is SNS Mobile Push ?
-SNS Mobile Push enables sending push notifications to mobile devices, supporting platforms like iOS, Android, and others.
-On which delivery method do we use and configure the subscription ?
-Subscriptions in SNS are configured based on the desired delivery method, such as HTTP/HTTPS, Email, SMS, Lambda, or SQS, depending on the subscriber's requirements.
+SNS is a fully managed AWS service that facilitates the sending of messages or notifications to a distributed 
+set of subscribers through various communication protocols.
+2.Why do we use SNS ?
+SNS is utilized for broadcasting messages or alerts to multiple subscribers, enabling event-driven architectures, 
+and ensuring decoupling between different components in a system.
+3.What is an Amazon SNS function, and how we can configure it?
+Amazon SNS functions by allowing publishers to send messages to topics, which act as communication channels. 
+Configuration involves creating topics, defining access policies, and subscribing endpoints, such as HTTP/HTTPS, Email, Lambda, etc.
+4.Difference between Amazon SNS & Amazon SQS?
+SNS (Simple Notification Service) is designed for push notifications where messages are broadcasted to multiple subscribers, 
+while SQS (Simple Queue Service) is a message queue for decoupling components, ensuring messages are processed by a single consumer.
+5.What are the different delivery formats and transports in AWS SNS ?
+AWS SNS supports various delivery formats like JSON and Raw, 
+and transports including HTTP, HTTPS, Email, SMS, Lambda, and more, providing flexibility in how messages are delivered.
+6.What is the difference between SNS FIFO & Standard while creating the SNS topic?
+SNS FIFO (First-In-First-Out) topics ensure strict message order and exactly-once delivery, making them suitable for 
+scenarios where message sequencing is critical. 
+Standard topics do not guarantee order or exactly-once delivery.
+7.On which services are configured with the AWS SNS ?
+AWS SNS can be configured with a range of services such as Lambda for serverless computing, 
+SQS for decoupling, HTTP/HTTPS for web endpoints, Email and SMS for notifications, and more.
+8.What is 10DLC in AWS ?
+10DLC (10-Digit Long Code) in AWS refers to a method for sending high-throughput A2P (Application-to-Person) 
+messages using local phone numbers. 
+It's commonly used in SNS for SMS messaging, especially for high-volume applications.
+9.What are FIFO topics on SNS ?
+FIFO topics in SNS provide strict ordering of messages and 
+guarantee exactly-once delivery, making them suitable for applications that require a sequential processing order.
+10.What is SNS Mobile Push ?
+SNS Mobile Push allows sending push notifications to mobile devices on various platforms, 
+including iOS, Android, and others, enhancing user engagement and communication.
+11.On which delivery method do we use and configure the subscription ?
+Subscriptions in SNS are configured based on the desired delivery method. 
+It could be through protocols like HTTP/HTTPS, Email, SMS, Lambda, or SQS, depending on the needs and 
+preferences of the subscribers.
+
