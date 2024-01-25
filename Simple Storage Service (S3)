@@ -1,0 +1,52 @@
+Difference between Block storage & Object Storage ?
+Block storage is used for traditional file systems and provides raw storage volumes, ideal for databases.
+Object storage stores data as objects with metadata and is suitable for scalable, unstructured data like images and videos.
+Difference between static website & dynamic website ?
+Static websites present fixed content to all users, while dynamic websites generate content on-the-fly, often using databases and server-side scripting.
+What are the naming rules ?
+Naming rules for S3 buckets require uniqueness globally, use of lowercase letters, and adherence to DNS naming conventions.
+What is the major resource of S3 Bucket ?
+The major resource in an S3 bucket is an object, which is the fundamental entity stored in S3.
+Why do we need to host static websites instead of dynamic websites ?
+Static websites are hosted for simplicity, cost-effectiveness, and fast content delivery. 
+Dynamic websites require server-side processing for personalized content.
+What is versioning & Why do we need versioning ?
+Versioning in S3 enables the storage of multiple versions of an object. 
+It safeguards against accidental deletion or overwrites.
+What are the objects and types of objects that we are uploading into the S3 Bucket ?
+Objects in S3 can be files, and types include Standard, Intelligent-Tiering, Glacier, etc., based on the storage class chosen.
+Why is MFA Delete important in S3 Bucket object level ?
+MFA (Multi-Factor Authentication) Delete adds an extra layer of security, requiring MFA authentication for object deletions in an S3 bucket.
+What is S3 Multipart upload ?
+S3 Multipart Upload allows large objects to be uploaded in parts, enhancing efficiency and resuming capability.
+What are the storage classes in Amazon S3 ?   —------------------- IMP
+Storage classes in S3 include Standard, Intelligent-Tiering, Glacier, Deep Archive, etc., each tailored for specific use cases.
+What is ACL ?
+ACL in S3 defines who can access objects and what permissions they have. IAM policies are commonly used for access control.
+Why do we need ACL ?
+ACL is needed to manage access to S3 objects, allowing or denying permissions to specific users or groups.
+What is a Life cycle policy ? Why do we need to use the life cycle rule ?
+A lifecycle policy in S3 automates the movement of objects between storage classes or deletion based on defined rules, optimizing costs.
+How can we make our bucket public ?
+To make an S3 bucket public, permissions must be set to allow public access. Caution is advised due to potential security risks.
+How can we give public access to our bucket ?
+AWS S3 pricing factors include storage usage, data transfer, requests, and any additional features or storage classes used.
+Aws pricing factor of the S3 Service.
+AWS S3 pricing factors include storage usage, data transfer, requests, and any additional features or storage classes used.
+How can we make our object public ?
+To make an S3 object public, permissions must be adjusted to allow public read access.
+How can we configure the static website logs in s3 ?
+Static website logs in S3 can be configured by enabling server access logging, which stores access logs in a designated bucket.
+What is CORS ?
+CORS defines how web pages in one domain can request and interact with resources from another domain. S3 allows CORS configuration.
+What is S3 Inventory ?
+S3 Inventory provides regular reports about objects and their metadata within an S3 bucket, aiding compliance and analytics.
+What does it mean by Requester pays ?
+Requester Pays in S3 allows the bucket owner to transfer data request costs to the requester, often used in scenarios where third parties access the data.
+What is the secondary word to Transfer acceleration ?Why do we need to use this transfer acceleration ?
+The secondary term for Transfer Acceleration is "S3 Transfer Acceleration." It improves data transfer speed to and from S3 using the CloudFront content delivery network.
+
+
+
+
+
