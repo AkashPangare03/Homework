@@ -1,0 +1,25 @@
+What is SNS ?
+SNS (Simple Notification Service):
+SNS is a fully managed AWS service for sending messages or notifications to a distributed set of recipients via various communication protocols.
+Why do we use SNS ?
+SNS is used for broadcasting messages, alerts, or notifications to a large number of subscribers, facilitating event-driven architectures and decoupling components.
+What is an Amazon SNS function, and how we can configure it.
+Amazon SNS functions by allowing publishers to send messages to topics, which are then delivered to subscribers. 
+Configuration involves creating topics, subscribing endpoints, and managing access policies.
+Difference between Amazon SNS & Amazon SQS.
+SNS is for push notifications, broadcasting to multiple subscribers, 
+while SQS (Simple Queue Service) is a message queue for decoupling components in a distributed system.
+What are the different delivery formats and transports in AWS SNS ?
+SNS supports multiple delivery formats like JSON, Raw, and transport protocols including HTTP, HTTPS, Email, SMS, and more.
+What is the difference between SNS FIFO & Standard while creating the SNS topic.
+SNS FIFO (First-In-First-Out) topics ensure messages are processed in the order they are sent, while Standard topics do not guarantee strict message order.
+On which services are configured with the AWS SNS ?
+AWS SNS is configured with services like Lambda, SQS, HTTP/HTTPS endpoints, Email, SMS, and mobile push services.
+What is 10DLC in AWS ?
+10DLC (10-Digit Long Code) is a method of sending high-throughput A2P (Application-to-Person) messages using local phone numbers, often used in SNS for SMS messaging.
+What are FIFO topics on SNS ?
+FIFO topics in SNS ensure exactly-once message delivery and maintain the order of messages, suitable for scenarios requiring strict sequencing.
+What is SNS Mobile Push ?
+SNS Mobile Push enables sending push notifications to mobile devices, supporting platforms like iOS, Android, and others.
+On which delivery method do we use and configure the subscription ?
+Subscriptions in SNS are configured based on the desired delivery method, such as HTTP/HTTPS, Email, SMS, Lambda, or SQS, depending on the subscriber's requirements.
